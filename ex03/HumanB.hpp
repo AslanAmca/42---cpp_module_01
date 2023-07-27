@@ -20,7 +20,10 @@ class HumanB
 {
 private:
 	std::string name;
-	Weapon *weapon; // HumanB her zaman bir silaha sahip olmak zorunda değil. NULL verebilmek için pointer olması daha uygun.
+
+	// HumanB her zaman bir silaha sahip olmak zorunda değil, yani NULL olabilir.
+	// Reference NULL olamaz, bu nedenle Weapon pointer olarak tanımlanmalıdır.
+	Weapon *weapon;
 
 public:
 	HumanB(std::string name);
