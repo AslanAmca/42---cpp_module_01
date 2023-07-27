@@ -20,8 +20,10 @@ class HumanA
 {
 private:
 	std::string name;
-	Weapon &weapon; // HumanA her zaman bir silaha sahip olacağı için referans daha uygun.
 
+	// HumanA her zaman bir silaha sahip olacak, yani NULL olma durumu yok. 
+	// Bu nedenle Weapon'un Reference olarak tanımlanması daha uygundur.
+	Weapon &weapon;
 public:
 	HumanA(std::string name, Weapon &weapon);
 	~HumanA(void);
