@@ -6,14 +6,13 @@
 /*   By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 14:29:38 by aaslan            #+#    #+#             */
-/*   Updated: 2023/04/27 14:22:20 by aaslan           ###   ########.fr       */
+/*   Updated: 2023/07/29 18:32:42 by aaslan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
 
-// kendi field'ı olan weapon nesnesini başlatıyor.
-// weapon reference olduğu için Initializer List yöntemi ile set edilmek zorunda.
+// Reference member variables must be initialized using the Initializer List in the constructor.
 HumanA::HumanA(std::string name, Weapon &weapon) : weapon(weapon)
 {
 	this->name = name;
@@ -23,7 +22,7 @@ HumanA::~HumanA(void)
 {
 }
 
-void HumanA::attack()
+void HumanA::attack(void)
 {
 	std::cout << name << " attacks with their " << weapon.getType() << std::endl;
 }

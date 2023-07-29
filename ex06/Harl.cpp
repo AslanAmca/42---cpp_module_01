@@ -6,7 +6,7 @@
 /*   By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 12:16:10 by aaslan            #+#    #+#             */
-/*   Updated: 2023/06/28 03:21:57 by aaslan           ###   ########.fr       */
+/*   Updated: 2023/07/29 19:13:14 by aaslan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void Harl::error(void)
 void Harl::complain(std::string level)
 {
 	void (Harl::*functions[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+
 	std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 
 	for (int i = 0; i < 4; i++)
@@ -79,6 +80,5 @@ void Harl::complain(std::string level)
 		}
 	}
 
-	// Eğer hiç birine eşit değilse o zaman yanlış bir şey girildi demektir.
 	std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 }

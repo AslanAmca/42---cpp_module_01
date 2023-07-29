@@ -6,14 +6,14 @@
 #    By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/24 11:23:19 by aaslan            #+#    #+#              #
-#    Updated: 2023/04/25 13:37:55 by aaslan           ###   ########.fr        #
+#    Updated: 2023/07/29 17:18:34 by aaslan           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		:= moar_brainz!
+NAME		:= moar_brainz
 CXX			:= c++
 CXXFLAGS	:= -Wall -Wextra -Werror -std=c++98
-SRC			:= $(wildcard *.cpp)
+SRC			:= Zombie.cpp zombieHorde.cpp main.cpp
 
 all: $(NAME)
 

@@ -6,7 +6,7 @@
 /*   By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 12:16:10 by aaslan            #+#    #+#             */
-/*   Updated: 2023/06/28 03:13:35 by aaslan           ###   ########.fr       */
+/*   Updated: 2023/07/29 18:54:15 by aaslan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,8 @@ void Harl::error(void)
 
 void Harl::complain(std::string level)
 {
-	// Harl sınıfına ait fonksiyonların imzasını tutan function pointer array
 	void (Harl::*functions[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 
-	// Olabilecek seviyeleri tutan array
 	std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 
 	for (int i = 0; i < 4; i++)
@@ -60,7 +58,6 @@ void Harl::complain(std::string level)
 		}
 	}
 
-	// geçerli bir seviye gelmediyse
 	std::cout << "*** "
 			  << level << " is not a valid level!"
 			  << " ***"

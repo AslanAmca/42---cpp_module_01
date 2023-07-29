@@ -6,7 +6,7 @@
 /*   By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 14:23:49 by aaslan            #+#    #+#             */
-/*   Updated: 2023/04/25 14:35:23 by aaslan           ###   ########.fr       */
+/*   Updated: 2023/07/29 18:30:26 by aaslan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Weapon::~Weapon(void)
 {
 }
 
-std::string Weapon::getType()
+const std::string Weapon::getType(void) const
 {
 	return this->type;
 }

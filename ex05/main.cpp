@@ -6,7 +6,7 @@
 /*   By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 12:22:11 by aaslan            #+#    #+#             */
-/*   Updated: 2023/06/28 03:14:52 by aaslan           ###   ########.fr       */
+/*   Updated: 2023/07/29 19:07:49 by aaslan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int main(void)
 	harl.complain("INFO");
 	harl.complain("WARNING");
 	harl.complain("ERROR");
+
+	std::cout << std::endl;
 
 	harl.complain("TEST");
 

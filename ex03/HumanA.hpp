@@ -6,7 +6,7 @@
 /*   By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 14:25:12 by aaslan            #+#    #+#             */
-/*   Updated: 2023/04/25 15:07:35 by aaslan           ###   ########.fr       */
+/*   Updated: 2023/07/29 18:32:36 by aaslan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,13 @@ class HumanA
 private:
 	std::string name;
 
-	// HumanA her zaman bir silaha sahip olacak, yani NULL olma durumu yok. 
-	// Bu nedenle Weapon'un Reference olarak tanımlanması daha uygundur.
+	// HumanA will always have a weapon, so Reference should be used as it will not be NULL.
 	Weapon &weapon;
+
 public:
 	HumanA(std::string name, Weapon &weapon);
 	~HumanA(void);
-	void attack();
+	void attack(void);
 };
 
 #endif
